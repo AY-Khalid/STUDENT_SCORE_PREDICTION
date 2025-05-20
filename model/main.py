@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
 import joblib
 
-df = pd.read_csv('data/studentperformance.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/AY-Khalid/STUDENT_SCORE_PREDICTION/refs/heads/main/StudentPerformanceFactors.csv')
 
 df['Teacher_Quality'] = df['Teacher_Quality'].fillna(df['Teacher_Quality'].mode()[0])
 df['Parental_Education_Level'] = df['Parental_Education_Level'].fillna(df['Parental_Education_Level'].mode()[0])
